@@ -16,8 +16,13 @@ class Context:
     strategy: Strategy # strategy interface
 
     """
-    Here, you can also create a constructor to set a strategy
+    Here, you can also create a constructor to set a strategy.
+    Usually, the Context accepts a strategy through the constructor, 
+    but also provides a setter to change it at runtime.
     """
+
+    def __init__(self, strategy: Strategy) -> None:
+        self.strategy = strategy
 
     def set_strategy(self, strategy: Strategy) -> None:
         self.strategy = strategy
@@ -50,17 +55,17 @@ class DefaultStrategy(Strategy):
 
 data = [5, 1, 9, 2, 0]
 
-appA = Context()
-appA.set_strategy(AscendingStrategy())
+appA = Context(AscendingStrategy())
+# appA.set_strategy(AscendingStrategy())
 resA = appA.execute_strategy(data)
-print("Ascending Strategy: ", resA)
+print("Ascending Strategy: ", resA)  # Ascending Strategy:  [0, 1, 2, 5, 9]
 
-appB = Context()
-appB.set_strategy(DescendingStrategy())
-resB = appB.execute_strategy(data)
-print("Descending Strategy: ", resB)
+# appB = Context()
+appA.set_strategy(DescendingStrategy())  ## set descending strategy and execute it
+resB = appA.execute_strategy(data)
+print("Descending Strategy: ", resB)  # Descending Strategy:  [9, 5, 2, 1, 0]
 
-appC = Context()
-appC.set_strategy(DefaultStrategy())
-resC = appC.execute_strategy(data)
-print("Default Strategy:", resC)
+# appC = Context()
+appA.set_strategy(DefaultStrategy()) ## set default strategy and execute it
+resC = appA.execute_strategy(data)
+print("Default Strategy:", resC)  # Default Strategy: [5, 1, 9, 2, 0]
