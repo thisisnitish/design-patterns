@@ -1,4 +1,5 @@
 // STRATEGY DESIGN PATTERN CODE EXAMPLE
+
 package main
 
 import (
