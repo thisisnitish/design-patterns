@@ -2,7 +2,7 @@
 
 This repository focuses on code examples of design patterns.
 
-### Design Patterns we cover
+### Design Patterns it covers
 
 - [x] Strategy
 - [x] Observer
