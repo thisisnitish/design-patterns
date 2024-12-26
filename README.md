@@ -7,3 +7,4 @@ This repository focuses on code examples of design patterns.
 - [x] Strategy
 - [x] Observer
 - [x] Decorator
+- [x] Factory
