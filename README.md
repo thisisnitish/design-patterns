@@ -8,3 +8,4 @@ This repository focuses on code examples of design patterns.
 - [x] Observer
 - [x] Decorator
 - [x] Factory
+- [x] Abstract Factory
