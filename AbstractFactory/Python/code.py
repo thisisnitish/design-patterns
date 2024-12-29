@@ -2,7 +2,7 @@
 
 from abc import ABC, abstractmethod
 
-# Abstract Product Class
+# Abstract Product Class or Interface
 class Pizza(ABC):
     
     @abstractmethod
@@ -79,7 +79,7 @@ class ChicagoPepperoniPizza(Pizza):
     def box(self):
         print("Boxing Chicago Style Pepperoni Pizza")
 
-# Abstract Factory Class
+# Abstract Factory Class or Interface
 class PizzaFactory(ABC):
 
     """
