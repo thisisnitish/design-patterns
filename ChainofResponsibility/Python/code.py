@@ -70,3 +70,12 @@ if __name__ == "__main__":
     a.set_next(b).set_next(c)
 
     client_code(a)
+
+
+# OUTPUT
+"""
+Request A is processed
+Request B is processed
+Request C is processed
+Request D didn't processed at all
+"""
