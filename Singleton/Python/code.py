@@ -1,5 +1,7 @@
 # SINGLE DESIGN PATTERN CODE EXAMPLE
 
+# TODO: Implement Singleton Thread Safe Design Pattern in Python. Also, few other variations of it.
+
 # NAIVE SINGLETON CODE EXAMPLE
 class SingletonMeta(type):
     _instances = {}
