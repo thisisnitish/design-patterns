@@ -9,3 +9,4 @@ This repository focuses on code examples of design patterns.
 - [x] Decorator
 - [x] Factory
 - [x] Abstract Factory
+- [x] Chain Of Responsibility
