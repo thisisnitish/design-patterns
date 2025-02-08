@@ -10,3 +10,5 @@ This repository focuses on code examples of design patterns.
 - [x] Factory
 - [x] Abstract Factory
 - [x] Chain Of Responsibility
+- [x] Singleton
+- [x] Proxy
